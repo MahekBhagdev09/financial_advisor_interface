@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<style>
+    /* body{
+        background-color: #10243A;;
+    }*/
+    nav {
+        height: 100px;
+        width: 100%;
+        background-color: #10243A;
+        display: flex;
+        /* justify-content: space-around;*/
+
+    }
+
+    h3 {
+        color: yellow;
+        padding-left: 20px;
+        padding-top: 5px;
+        float: left;
+
+    }
+
+
+    svg {
+        height: 40px;
+        width: 40px;
+        margin-left: 20px;
+        margin-top: 20px;
+        float: left;
+    }
+
+    .a1 {
+        color: whitesmoke;
+        font-size: medium;
+
+    }
+
+    .navi {
+        display: flex;
+
+        float: right;
+        margin-left: 300px;
+        padding: 20px;
+    }
+
+    a {
+        padding: 8px;
+        color: gray;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline WHITE;
+        color: white;
+    }
+
+    .main {
+        background-color: #1C3854;
+        height: 450px;
+        width: 100%;
+    }
+
+    .text_1 {
+        color: yellow;
+        margin-left: 30px;
+        padding-top: 30px;
+        letter-spacing: 2px;
+    }
+
+    .text_2 {
+        color: white;
+        padding-top: 15px;
+        width: 500px;
+    }
+
+    .text_3 {
+        color: white;
+        width: 580px;
+        padding-left: 30px;
+    }
+
+    .text_4 {
+        padding-top: 25px;
+        padding-left: 25px;
+        word-spacing: 10px;
+    }
+
+    button {
+        transition: 0.5s ease-in-out;
+    }
+
+    button:hover {
+        transform: scale(0.9);
+    }
+
+
+    .left {
+        float: left;
+    }
+
+    img {
+        float: right;
+        padding-right: 40px;
+        padding-top: 23px;
+        border-radius: 50%px;
+    }
+
+    .offer {
+        color: #1C3854;
+        text-align: center;
+        margin-top: 20PX;
+        word-spacing: 3px;
+        letter-spacing: 1PX;
+        font-size: small;
+    }
+
+    .services {
+        font-size: xx-large;
+        letter-spacing: -1px;
+    }
+
+    .m1 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+
+    .m2 {
+        font-size: small;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+    }
+
+    .card>img {
+        margin-left: 20px;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .card {
+        transition: 0.5s ease-out;
+        background-color: rgb(231, 228, 228);
+    }
+
+    .card:hover {
+        transform: scale(1.09);
+    }
+
+    .btn-primary {
+        background-color: rgb(249, 215, 23);
+        color: black;
+    }
+
+    .v1>img {
+        float: left;
+        height: 350px;
+        width: 350px;
+        margin-left: 60px;
+        border-radius: 20px;
+    }
+
+    .m3 {
+        background-color: rgb(251, 248, 248);
+        height: 370px;
+    }
+
+    .m4 {
+        font-size: small;
+        color: rgb(132, 107, 8);
+        padding-top: 35px;
+
+    }
+
+    .v2 {
+        font-size: xx-large;
+        color: #1C3854;
+    }
+
+    .v3 {
+        width: 1000px;
+        padding-top: 10px;
+        text-align: justify;
+    }
+
+    .btn-primary1 {
+        background-color: #1C3854;
+        color: white;
+        width: 300px;
+
+    }
+
+    .btn-primary1:hover {
+        background-color: rgb(173, 169, 169);
+        color: black;
+    }
+
+    .final {
+        height: 200px;
+        background-color: rgb(251, 248, 248);
+
+    }
+
+    .c1 {
+        text-align: center;
+        color: rgb(203, 167, 7);
+    }
+
+    .c2 {
+        font-size: xx-large;
+        color: #1C3854;
+    }
+
+    .c3 {
+        color: #1C3854;
+        padding-bottom: 40px;
+        text-align: center;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+
+    .what {
+        margin-left: 500px;
+        margin-top: -10px;
+        margin-right: 10px;
+
+    }
+    footer{
+        background-color: #10243A;
+        height: 60px;
+        color: white;
+    }
+    .y1 , .y2 , .y3{
+        text-align: center;
+        font-size: xx-small;
+        padding-top: 3px;
+    }
+</style>
+
+<body>
+    <nav> <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+            <path fill="rgb(255, 212, 59)"
+                d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7 262.6 153.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l73.4-73.4 57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z" />
+        </svg>
+        <h3>Pragati Investment & Consultancy<br>
+            <div class="a1"> <br>
+                <b> Lead by : Mr. Vikram Bhagdev </b>
+            </div>
+        </h3>
+
+
+        <div class="navi">
+            <a href="#">Home</a>
+            <a href="#">
+                <p>Post</p>
+            </a>
+            <a href="#">LIC</a>
+            <a href="#">Mutal Funds</a>
+            <a href="#">Contact</a>
+
+        </div>
+    </nav>
+
+
+
+    <div>
+        <div class="main">
+
+            <div class="left">
+
+                <div class="text_1"> TRUST | GUIDANCE | PROGRESS
+
+                    <div class="text_2">
+                        <h2>Your Trust. <br> Our Guidance. <br> Your Future.</h2>
+                    </div>
+                </div>
+                <div class="text_3"> Welcome to Pragati Investment and Consultancy, led by <b>Vikram Bhagdev</b>. We
+                    help you
+                    make informed decisions with our services in postal savings, life insurance and mutual funds.
+                </div>
+
+                <div class="text_4">
+                    <button type="button" class="btn btn-warning">Explore Our services</button>
+
+                    <button type="button" class="btn btn-outline-secondary">Contact Us</button>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="right">
+
+                <img src="p1.jpeg" alt="find your plan today.">
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="bot">
+
+            <div class="offer"><B> WHAT WE OFFER <br>
+                    <div class="services">Our services</div>
+                </B><br>
+                <div class="m2">Explore the services available through Pragati Investment and Consultancy</div>
+            </div>
+
+
+            <div class="m1">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="post1.png" class="card-img-top" alt="post">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Office Services</h5>
+                        <p class="card-text">Information and assistance with applicable postal and savings services.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="lic.png" class="card-img-top" alt="lic">
+                    <div class="card-body">
+                        <h5 class="card-title">LIC insurance</h5>
+                        <p class="card-text">Explore life insurance Information and request assistance with policy
+                            enquiries.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="mu3.jpg" class="card-img-top" alt="mutalfunds">
+                    <div class="card-body">
+                        <h5 class="card-title">Mutal Funds</h5>
+                        <p class="card-text">Learn about mutal funds,SIPs, Investment objectives and associated risk.
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <br>
+            <br>
+
+            <div class="m3">
+
+                <div class="v1"><img src="WhatsApp Image 2026-10-24 at 2.38.56 PM.jpeg" alt="your plan , our priyority">
+                </div>
+
+
+                <div class="m4">ABOUT PRAGATI INVESTMENT AND CONSULTANCY____________</div>
+                <div class="v2"><b>Mr. Vikram Bhagdev :</b></div>
+                <p class="v3">Pragati Investment and Consultancy aims to help customers understand the services
+                    available to them and make informed decision. Led by <b>Vikram Bhagdev.</b> the bussiness brings
+                    together postal services, life insurance and mutal funds-related assistance.</p>
+
+
+
+                <button type="button" class="btn btn-primary1">Get in Touch</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <br>
+
+    <div class="final">
+
+        <div class="c1">LET'S CONNECT <div class="c2"><b>How Can We Help You ?</b></div>
+        </div>
+        <div class="c3">Contact Vikram Bhagdev to enquire about our services</div>
+
+        <div>
+
+            <svg class="what" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path fill="rgb(255, 212, 59)"
+                    d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z" />
+            </svg>
+
+            +91 94269 62388
+        </div>
+
+
+    </div>
+    <hr>
+
+    <footer>
+        <div class="y1">&copy; 2026 Pragati Investment and Consultancy. All Right Reserved.</div>
+        <div class="y2">Mutal Fund Investment are subject to market risks. Please read all the scheme-related document carefully.</div>
+        <div class="y3">This is an independent bussiness website,not an official website of india Post ir LIC.</div>
+    </footer>
+
+</body>
+
+</html>
